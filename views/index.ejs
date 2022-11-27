@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Authenticate</title>
 </head>
 <body>
@@ -27,15 +27,15 @@
                 <!-- <input type="checkbox" class="check-box"><span>Remember Password</span> -->
                 <button type="submit" class="submit-btn">Login</button>
             </form>
-            <form id="register" class="input-group">
-                <input type="text" class="input-field" placeholder="User Name" required>
-                <input type="email" class="input-field" placeholder="Email Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-                <button type="submit" class="submit-btn">Register</button>
+            <form id="register" action="/signup" method="post" class="input-group">
+                <input type="text" class="input-field" name="username" placeholder="User Name" required>
+                <input type="email" class="input-field" name="email" placeholder="Email Id" required>
+                <input type="text" class="input-field" name="password" placeholder="Enter Password" >
+                <input type="checkbox" name="check" class="check-box"><span>I agree to the terms & conditions</span>
+                <button type="submit"  class="submit-btn">Register</button>
             </form>
         </div>   
       </div>
 </body>
-<script src="./script.js"></script>
+<script src="/js/script.js"></script>
 </html>
